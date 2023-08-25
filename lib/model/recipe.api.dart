@@ -18,6 +18,7 @@ class RecipeApi {
 
     for (var i in data['feed']) {
       _temp.add(i['content']['details']);
+
     }
 
     return Recipe.recipesFromSnapshot(_temp);
